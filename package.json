@@ -6,9 +6,11 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "publish": "rm -rf dist && npm run build && gh-pages -d dist"
   },
   "devDependencies": {
-    "astro": "^1.0.0-beta.12"
+    "astro": "^1.0.0-beta.12",
+    "gh-pages": "^3.2.3"
   }
 }
